@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>As Vezes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Tela inicial -->
+  <div id="inicio">
+    <h1>Às vezes...</h1>
+    <p>Algumas músicas guardam lugares que só nós conhecemos.</p>
+    <button id="btnDescobrir">Descobrir ✨</button>
+  </div>
+
+  <!-- Tela experiência -->
+  <div id="experiencia" class="hidden">
+    <div class="video-wrapper">
+      <video id="musicaVideo" width="100%" height="200" controls>
+        <source src="Keane - Somewhere Only We Know (Lyrics).mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
+
+    <div class="mensagem">
+      <p id="textoDigitando"></p>
+    </div>
+
+    <div class="botoes">
+      <button id="btnSim">Sim, aceito ❤️</button>
+      <button id="btnDescobrirMais">Descobrir mais ✨</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- Canvas para confete -->
+<canvas id="confeteCanvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>

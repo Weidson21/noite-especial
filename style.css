@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #000000, #1a1a1a);
+  color: white;
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.hidden {
+  display: none;
+}
+
+.video-wrapper {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mensagem {
+  margin-top: 10px;
+  min-height: 120px;
+  font-size: 17px;
+  line-height: 1.5;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.mensagem.visible {
+  opacity: 1;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.botoes button {
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff4d6d, #ff9c4d);
+  border: none;
+  color: white;
+  box-shadow: 0 5px 15px rgba(255,0,100,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botoes button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255,0,100,0.5);
+}
+
+.botoes button:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 10px rgba(255,0,100,0.3);
+}
+
+/* Canvas confete */
+#confeteCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
